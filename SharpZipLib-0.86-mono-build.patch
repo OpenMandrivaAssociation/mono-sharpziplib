@@ -1,0 +1,30 @@
+diff -p -up SrcSamples/SharpZlib.build.mono SrcSamples/SharpZlib.build
+--- SrcSamples/SharpZlib.build.mono	2010-10-14 20:40:34.000000000 +0200
++++ SrcSamples/SharpZlib.build	2010-10-14 20:45:08.000000000 +0200
+@@ -127,7 +127,25 @@
+ 	</target>
+ 
+ 	<target name="build-mono-2.0" >
+-		<fail message="Dont know how to build for Mono 2.0." />
++		<csc
++		target="library"
++				output="${build.sharpziplib.path}"
++				optimize="${optimize}"
++				debug="${debug}"
++				checked="${checked}"
++				define="${build.defines}"
++				keyfile="ICSharpCode.SharpZipLib.key"
++		  doc="${build.output.dir}/ICSharpCode.SharpZipLib.xml"
++		>
++
++			<sources basedir="src">
++				<include name="**/*.cs"/>
++			</sources>
++			<references>
++				<include name="mscorlib.dll" />
++				<include name="System.dll" />
++			</references>
++		</csc>
+ 	</target>
+ 
+ 	<target name="build-samples" >
