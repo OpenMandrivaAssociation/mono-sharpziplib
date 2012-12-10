@@ -1,0 +1,8 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: sharpziplib
+Description: sharpziplib - Client ZIP library written in C#
+Version: 0.36
+Libs: -r:${libdir}/mono/sharpziplib/ICSharpCode.SharpZipLib.dll

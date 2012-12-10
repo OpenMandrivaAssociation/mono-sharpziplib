@@ -62,3 +62,14 @@ gacutil -i SrcSamples/bin/ICSharpCode.SharpZipLib.dll -f -package sharpziplib -r
 %doc SrcSamples/doc/*
 %_datadir/pkgconfig/sharpziplib.pc
 
+
+
+%changelog
+* Sat Oct 15 2011 Götz Waschk <waschk@mandriva.org> 0.86.0-2mdv2012.0
++ Revision: 704776
+- rebuild
+
+* Thu Oct 14 2010 Götz Waschk <waschk@mandriva.org> 0.86.0-1mdv2011.0
++ Revision: 585721
+- import mono-sharpziplib
+
