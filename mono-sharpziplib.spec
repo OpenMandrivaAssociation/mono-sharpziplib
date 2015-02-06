@@ -1,6 +1,6 @@
 Name:		mono-sharpziplib
 Version:	0.86.0
-Release:	%mkrel 2
+Release:	3
 Summary:	Client Zip library written in C#
 URL:		http://www.icsharpcode.net/OpenSource/SharpZipLib/Default.aspx
 # Exception: Permission is given to use this library in commercial closed-source applications
