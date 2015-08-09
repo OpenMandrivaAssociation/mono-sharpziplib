@@ -13,6 +13,7 @@ Patch0:		SharpZipLib-0.86-mono-build.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	nant 
 BuildRequires:	unzip
+BuildRequires:	pkgconfig(mono)
 BuildArch: noarch
 
 %description
